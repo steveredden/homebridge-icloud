@@ -1,6 +1,6 @@
 {
   "name": "homebridge-icloud",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.1",
   "description": "homebridge integration to create switches to initiate a \"Find my Device\" request",
   "main": "index.js",
   "engines": {
