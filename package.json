@@ -1,0 +1,41 @@
+{
+  "name": "homebridge-icloud",
+  "version": "1.0.0",
+  "description": "homebridge integration to create switches to initiate a \"Find my Device\" request",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12.9.0",
+    "homebridge": ">=1.0.0"
+  },
+  "scripts": {
+    "watch": "npm link && nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steveredden/homebridge-icloud.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/steveredden"
+  },
+  "keywords": [
+    "homebridge",
+    "homebridge-plugin",
+    "icloud",
+    "findmy",
+    "homekit",
+    "iphone",
+    "automation",
+    "home-automation",
+    "smarthome"
+  ],
+  "dependencies": {
+    "find-my-iphone": "1.1.2"
+  },
+  "author": "steveredden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steveredden/homebridge-icloud/issues"
+  },
+  "homepage": "https://github.com/steveredden/homebridge-icloud#readme"
+}

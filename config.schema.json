@@ -1,0 +1,41 @@
+{
+    "pluginAlias": "HomebridgeiCloud",
+    "pluginType": "platform",
+    "singular": true,
+    "headerDisplay": "Plugin to expose 'Find My Device' functionality",
+    "footerDisplay": "For more information, see the [README.md](https://github.com/steveredden/homebridge-icloud/blob/main/README.md)",
+    "schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string",
+                "default": "iCloud",
+                "description": "The name that will appear in your homebridge log"
+            },
+            "username": {
+                "title": "Apple ID",
+                "type": "string",
+                "description": "Email address or Apple ID",
+                "placeholder": "yourname@apple.com",
+                "required": true
+            },
+            "password": {
+                "title": "App Password",
+                "type": "string",
+                "description": "Application Password generated for this integration",
+                "required": true
+            },
+            "device": {
+                "title": "Device Friendly-name",
+                "type": "string",
+                "description": "Name of your device",
+                "required": true
+            },
+            "debug": {
+                "title": "Enable debug logs",
+                "type": "boolean",
+                "default": ""
+            }
+        }
+    }
+}
