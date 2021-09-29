@@ -18,7 +18,7 @@
 
 This plugin is designed to expose a button that assists in finding one's phone or other devices. The "Find my Phone" features of iCloud bypass any `Do not Disturb` or `Silent` settings on the phone, and plays an audible chime. Ideally, the buttons are to be triggered by Alexa (thanks, of course, to [homebridge-alexa](https://github.com/NorthernMan54/homebridge-alexa)), as an alternative to constantly asking [her] to `call my phone` - which, if on silent, may not be easily found. An Alexa Routine triggers the switch:
 
-<p align="center"><img src="img/AlexaRoutine.jpg" width="280"></p>
+<p align="center"><img src="img/alexaroutine.jpg" width="280"></p>
 
 ## Installation Instructions
 
