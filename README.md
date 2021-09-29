@@ -10,7 +10,7 @@
 
 # homebridge-icloud
 
-`homebridge-icloud` is a [Homebridge](https://homebridge.io) plugin that exposes your Apple devices to [Apple's](https://www.apple.com) [HomeKit](https://www.apple.com/ios/home) smart home platform as stateless switches, which when turned on, actiave the "Find my Device" functionality.
+`homebridge-icloud` is a [Homebridge](https://homebridge.io) plugin that exposes your Apple devices to [Apple's](https://www.apple.com) [HomeKit](https://www.apple.com/ios/home) smart home platform as stateless switches, which when turned on, activates the "Find my Device" functionality.
 
 <img src="img/findmyapp.jpg" width="110" />
 
