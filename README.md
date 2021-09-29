@@ -62,6 +62,12 @@ platforms: [
 * *name* (optional): platform name to display in logs
 * *debug* (optional): boolean to enable more verbose logging
 
+## Limitations
+
+This plugin relies on the npmjs package ["find-my-iphone" v1.1.2](https://www.npmjs.com/package/find-my-iphone), which does not appear to support App-specific passwords. Similarly, it does not provide a great way to catch login errors, and the platform will restart.  It is **highly** recommended to run this as a [child bridge](https://github.com/homebridge/homebridge/wiki/Child-Bridges), so that you do not impact other plugins!
+
+![fatalerror](img/childbridgerestart.png)
+
 <br><hr><br>
 <p align="center">
     <a href="https://buymeacoffee.com/steveredden"><img src="img/bmc-new-logo.jpg" width="230"/></a>
