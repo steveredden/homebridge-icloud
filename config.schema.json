@@ -20,16 +20,19 @@
                 "required": true
             },
             "password": {
-                "title": "App Password",
+                "title": "Password",
                 "type": "string",
-                "description": "Application Password generated for this integration",
+                "description": "Apple Password",
                 "required": true
             },
-            "device": {
-                "title": "Device Friendly-name",
-                "type": "string",
-                "description": "Name of your device",
-                "required": true
+            "devices": {
+                "type": "array",
+                "items": {
+                    "title": "Device",
+                    "type": "string",
+                    "description": "Name/label of your device",
+                    "required": true
+                }
             },
             "debug": {
                 "title": "Enable debug logs",
