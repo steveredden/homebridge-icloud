@@ -12,6 +12,14 @@
 
 `homebridge-icloud` is a [Homebridge](https://homebridge.io) plugin that exposes your Apple devices to [Apple's](https://www.apple.com) [HomeKit](https://www.apple.com/ios/home) smart home platform as stateless switches, which when turned on, actiave the "Find my Device" functionality.
 
+<img src="img/findmyapp.jpg" width="110" />
+
+## Use Cases
+
+This plugin is designed to expose a button that assists in finding one's phone or other devices. The "Find my Phone" features of iCloud bypass any `Do not Disturb` or `Silent` settings on the phone, and plays an audible chime. Ideally, the buttons are to be triggered by Alexa (thanks, of course, to [homebridge-alexa](https://github.com/NorthernMan54/homebridge-alexa)), as an alternative to constantly asking [her] to `call my phone` - which, if on silent, may not be easily found. An Alexa Routine triggers the switch:
+
+<p align="center"><img src="img/AlexaRoutine.jpg" width="280"></p>
+
 ## Installation Instructions
 
 #### Option 1: Install via Homebridge Config UI X
@@ -26,7 +34,7 @@ sudo npm install -g homebridge-icloud
 
 ## Configuration
 
-Device names and IP Addresses must be configured manually in current state:
+Device names (labels) can be found in your "Find My" app in the Devices tab
 
 ### Example
 
@@ -50,7 +58,7 @@ platforms: [
 * **username** (mandatory): your Apple iCloud username
 * **password** (mandatory): your Apple iCloud password
 * **devices** (mandatory): array containing your devices' labels
-  * ***label** (mandatory): the label of your accessory
+  * **\<label\>** (mandatory): the name of your accessory
 * *name* (optional): platform name to display in logs
 * *debug* (optional): boolean to enable more verbose logging
 
