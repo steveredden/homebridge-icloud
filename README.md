@@ -45,8 +45,13 @@ platforms: [
         "username": "you@apple.com",
         "password": "yourPassword",
         "devices": [
-            "iPhone SE",
-            "iPhone 13"
+            {
+                "name": "iPhone SE"
+            },
+            {
+                "name": "iPhone 13",
+                "nameOverride": "Find My Thirteen"
+            }
         ],
         "name": "iCloud",
         "debug": false
@@ -58,7 +63,8 @@ platforms: [
 * **username** (mandatory): your Apple iCloud username
 * **password** (mandatory): your Apple iCloud password
 * **devices** (mandatory): array containing your devices' labels
-  * **\<label\>** (mandatory): the name of your accessory
+  * **name** (mandatory): the name/identifier of your accessory (find in your iCloud dashboard)
+  * *nameOverride* (optional): a customized name for the accessory (default: "Find My \<name\>")
 * *name* (optional): platform name to display in logs
 * *debug* (optional): boolean to enable more verbose logging
 

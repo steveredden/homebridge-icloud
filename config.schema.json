@@ -28,10 +28,19 @@
             "devices": {
                 "type": "array",
                 "items": {
-                    "title": "Device",
-                    "type": "string",
-                    "description": "Name/label of your device",
-                    "required": true
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "title": "Device Identifier",
+                            "type": "string",
+                            "description": "Name/identifier of your device",
+                            "required": true
+                        },
+                        "nameOverride": {
+                            "title": "Accessory Name Override",
+                            "type": "string"
+                        }
+                    }
                 }
             },
             "debug": {
