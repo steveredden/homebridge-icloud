@@ -70,9 +70,27 @@ platforms: [
 
 ## Limitations
 
-This plugin relies on the npmjs package ["find-my-iphone" v1.1.2](https://www.npmjs.com/package/find-my-iphone), which does not appear to support App-specific passwords. Similarly, it does not provide a great way to catch login errors, and the platform will restart.  It is **highly** recommended to run this as a [child bridge](https://github.com/homebridge/homebridge/wiki/Child-Bridges), so that you do not impact other plugins!
+This plugin relies on the npmjs package ["find-my-iphone" v1.1.2](https://www.npmjs.com/package/find-my-iphone), which does not appear to support App-specific passwords. Similarly, it does not provide a great way to catch login / device errors, and the platform will restart.  It is **highly** recommended to run this as a [child bridge](https://github.com/homebridge/homebridge/wiki/Child-Bridges), so that you do not impact other plugins!
 
 ![fatalerror](img/childbridgerestart.png)
+
+### Multiple Accounts / Family Devices
+
+["find-my-iphone" v1.1.2](https://www.npmjs.com/package/find-my-iphone) does not appear to expose/support "family devices," so if you need to *find* a device from another iCloud account, you should set up a second [child bridge](https://github.com/homebridge/homebridge/wiki/Child-Bridges) with alternative credentails (ex. your spouse's credentials):
+
+![twoChildBridges](img/twoChildBridge.png)
+
+In particular, you'll want to modify the following to be unique:
+
+* Name
+* _bridge.username
+* _bridge.port
+
+Two [Child Bridges](https://github.com/homebridge/homebridge/wiki/Child-Bridges) will display:
+
+![dashboardDisplay](img/dashboard2Bridge.png)
+
+***Note**: You'll need to directly configure the settings of the second bridge in your `config.json` - the Plugins page will only show the config UI for the first bridge*
 
 <br><hr><br>
 <p align="center">
